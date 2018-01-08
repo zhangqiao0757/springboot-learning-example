@@ -1,7 +1,5 @@
 package org.spring.springboot.service;
 
-import org.spring.springboot.domain.City;
-
 /**
  * 城市业务逻辑接口类
  *

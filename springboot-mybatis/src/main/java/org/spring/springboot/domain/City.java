@@ -1,45 +1,31 @@
 package org.spring.springboot.domain;
 
-/**
- * 城市实体类
- *
- * Created by bysocket on 07/02/2017.
- */
-public class City {
+import java.io.Serializable;
 
-    /**
-     * 城市编号
-     */
-    private Long id;
+public class City implements Serializable {
+    private Integer id;
 
-    /**
-     * 省份编号
-     */
-    private Long provinceId;
+    private Integer provinceId;
 
-    /**
-     * 城市名称
-     */
     private String cityName;
 
-    /**
-     * 描述
-     */
     private String description;
 
-    public Long getId() {
+    private static final long serialVersionUID = 1L;
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public Long getProvinceId() {
+    public Integer getProvinceId() {
         return provinceId;
     }
 
-    public void setProvinceId(Long provinceId) {
+    public void setProvinceId(Integer provinceId) {
         this.provinceId = provinceId;
     }
 
@@ -48,7 +34,7 @@ public class City {
     }
 
     public void setCityName(String cityName) {
-        this.cityName = cityName;
+        this.cityName = cityName == null ? null : cityName.trim();
     }
 
     public String getDescription() {
@@ -56,6 +42,21 @@ public class City {
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.description = description == null ? null : description.trim();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", provinceId=").append(provinceId);
+        sb.append(", cityName=").append(cityName);
+        sb.append(", description=").append(description);
+        sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append("]");
+        return sb.toString();
     }
 }
