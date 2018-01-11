@@ -12,15 +12,6 @@ public class City implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 描述
-     */
-    private String description;
-
-    /**
-     * 创建者
-     */
-    private String createdby;
 
     private Integer id;
 
@@ -28,8 +19,7 @@ public class City implements Serializable {
 
     private String cityName;
 
-
-    //private String description;
+    private String description;
 
     public Integer getId() {
         return id;
