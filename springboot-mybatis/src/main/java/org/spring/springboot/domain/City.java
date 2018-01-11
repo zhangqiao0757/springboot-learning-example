@@ -28,8 +28,8 @@ public class City implements Serializable {
 
     private String cityName;
 
-    private String description;
 
+    private String createdate;
 
     public Integer getId() {
         return id;
