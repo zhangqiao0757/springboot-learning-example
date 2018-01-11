@@ -15,7 +15,7 @@ public class City implements Serializable {
     /**
      * 描述
      */
-    private String description;
+   // private String description;
 
     /**
      * 创建者
@@ -29,7 +29,7 @@ public class City implements Serializable {
     private String cityName;
 
 
-    private String createdate;
+    //private String createdate;
 
     public Integer getId() {
         return id;
