@@ -25,7 +25,7 @@ public class CityRestController {
      * @param city
      * @return
      */
-    @RequestMapping(value = "/api/city", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/city", method = RequestMethod.GET)
     public Long createCity(@RequestBody City city) {
         return cityService.saveCity(city);
     }

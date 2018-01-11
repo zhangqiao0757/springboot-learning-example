@@ -49,9 +49,8 @@ public class CityESServiceImpl implements CityService {
         // Function Score Query
         FunctionScoreQueryBuilder functionScoreQueryBuilder = QueryBuilders.functionScoreQuery()
                 .add(QueryBuilders.boolQuery().should(QueryBuilders.matchQuery("cityname", searchContent)),
-                    ScoreFunctionBuilders.weightFactorFunction(1000))
-                .add(QueryBuilders.boolQuery().should(QueryBuilders.matchQuery("description", searchContent)),
-                        ScoreFunctionBuilders.weightFactorFunction(100));
+                    ScoreFunctionBuilders.weightFactorFunction(1000)) ;
+
 
         // 创建搜索 DSL 查询
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
