@@ -2,6 +2,7 @@ package org.spring.springboot.domain;
 
 import java.io.Serializable;
 
+
 public class City implements Serializable {
     private Integer id;
 
