@@ -3,7 +3,7 @@ package org.spring.springboot.domain;
 /**
  * 城市实体类
  *
- * Created by zhangqiao 2018/1/11
+ * Created by zhangqiao 2018-01-11 21:51
  */
 public class City {
 
