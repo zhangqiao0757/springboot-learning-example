@@ -12,13 +12,13 @@ public class City implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Integer id;
+   // private Integer id;
 
-    private Integer provinceId;
+   // private Integer provinceId;
 
-    private String cityName;
+   // private String cityName;
 
-    private String description;
+   // private String description;
 
 
     public Integer getId() {
