@@ -26,6 +26,12 @@ public class City {
      * 描述
      */
     private String description;
+    
+    /**
+     * 创建者
+     */
+    private String createdby;
+    
 
     public Long getId() {
         return id;
