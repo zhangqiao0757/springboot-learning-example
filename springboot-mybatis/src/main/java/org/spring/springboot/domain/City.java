@@ -1,7 +1,7 @@
 package org.spring.springboot.domain;
 
 /**
- * 城市实体类
+ * 城市实体类City
  *
  * Created by zhangqiao 2018-01-11 21:51
  */
