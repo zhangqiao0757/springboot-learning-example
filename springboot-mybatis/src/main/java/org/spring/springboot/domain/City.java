@@ -9,6 +9,9 @@ import java.io.Serializable;
 
 
 public class City implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     private Integer id;
 
     private Integer provinceId;
@@ -17,7 +20,7 @@ public class City implements Serializable {
 
     private String description;
 
-    private static final long serialVersionUID = 1L;
+
 
     public Integer getId() {
         return id;
