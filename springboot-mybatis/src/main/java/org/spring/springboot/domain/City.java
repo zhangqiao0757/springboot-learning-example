@@ -19,7 +19,7 @@ public class City implements Serializable {
     private String cityName;
 
 
-    private String createdate;
+    private String description;
 
     public Integer getId() {
         return id;
