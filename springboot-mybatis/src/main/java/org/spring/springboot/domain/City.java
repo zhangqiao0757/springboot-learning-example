@@ -2,9 +2,9 @@ package org.spring.springboot.domain;
 
 import java.io.Serializable;
 /**
- * 城市实体类City
+ *      城市实体类City
  *
- * Created by zhangqiao 2018-01-11 21:51
+ *     Created by zhangqiao 2018-01-11 21:51
  */
 
 
@@ -12,7 +12,6 @@ public class City implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String description;
 
     private Integer id;
 
@@ -20,6 +19,8 @@ public class City implements Serializable {
 
     private String cityName;
 
+
+    private String description;
 
     public Integer getId() {
         return id;
